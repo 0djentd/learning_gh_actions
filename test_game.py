@@ -1,7 +1,7 @@
+"""Unittests"""
+
 import unittest
 import game
-
-"""Unittests"""
 
 
 class GameTests(unittest.TestCase):

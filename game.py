@@ -1,11 +1,7 @@
-import re
-import unittest
-import logging
-import dataclasses
-
-
 """Simple game.
 """
+
+import dataclasses
 
 
 @dataclasses.dataclass
