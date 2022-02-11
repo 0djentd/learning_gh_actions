@@ -16,8 +16,13 @@ class GameState():
     max_score: int = 3
     last: Player | None = None
 
+    def check(self) -> bool:
+        if self.score >= self.max_score:
+            return True
+        return False
 
-def main():
+
+def main() -> int:
     players = [Player('a'), Player('b')]
     game = GameState(players)
     print(game)
