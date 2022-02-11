@@ -1,2 +1,2 @@
-#### Simple game
-
+# Simple game
+simple game
