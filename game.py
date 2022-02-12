@@ -2,6 +2,9 @@
 """
 
 import dataclasses
+import logging
+
+logger = logging.getLogger('Game')
 
 
 @dataclasses.dataclass
@@ -21,8 +24,10 @@ class GameState():
     def check(self) -> bool:
         """Check if game should be finished."""
         if self.score >= self.max_score:
-            return True
-        return False
+            result = True
+        result = False
+        logger.debug(result)
+        return result
 
 
 def main() -> int:
