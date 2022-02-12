@@ -12,9 +12,10 @@ class Player():
     """Object representing player."""
     name: str
 
-    def check_name(self):
+    def check_name(self) -> None:
         if len(self.name) == 0:
             raise ValueError
+        return None
 
 
 @dataclasses.dataclass
