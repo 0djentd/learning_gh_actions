@@ -12,6 +12,10 @@ class Player():
     """Object representing player."""
     name: str
 
+    def check_name(self):
+        if len(self.name) == 0:
+            raise ValueError
+
 
 @dataclasses.dataclass
 class GameState():
