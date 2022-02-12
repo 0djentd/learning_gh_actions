@@ -29,3 +29,10 @@ class GameTests(unittest.TestCase):
             player = game.Player(copy.deepcopy(x))
             with self.subTest():
                 self.assertEqual(player.name, x)
+
+    def test_names_2(self):
+        """Test player name."""
+        for x in self.names:
+            player = game.Player(copy.deepcopy(x))
+            with self.subTest():
+                self.assertEqual(player.check_name(), None)
