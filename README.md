@@ -1,2 +1,2 @@
 # Simple game
-simple game
+simple project, created for learning purposes.
