@@ -23,6 +23,13 @@ class GameTests(unittest.TestCase):
             if not isinstance(x, str):
                 raise TypeError
 
+    def test_player_name(self):
+        """Test player name."""
+        for x in self.names:
+            player = game.Player(copy.deepcopy(x))
+            with self.subTest():
+                self.assertEqual(player.name, x)
+
     def test_names_2(self):
         """Test player name."""
         for x in self.names:
