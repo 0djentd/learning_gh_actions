@@ -17,12 +17,6 @@ class GameTests(unittest.TestCase):
         """Test player name."""
         del self.names
 
-    def test_names(self):
-        """Test player name."""
-        for x in self.names:
-            if not isinstance(x, str):
-                raise TypeError
-
     def test_player_name(self):
         """Test player name."""
         for x in self.names:
