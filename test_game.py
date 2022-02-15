@@ -3,7 +3,7 @@
 import unittest
 import copy
 
-import game
+from src import game
 
 
 class GameTests(unittest.TestCase):
